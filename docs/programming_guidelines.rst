@@ -6,6 +6,10 @@ Python version
 
 **Develop and test with Python 3.11** (aligned with CI in the Synarius repositories). Use a virtual environment created with that interpreter; avoid mixing binary wheels from different Python minor versions (e.g. ``cp311`` packages under Python 3.12).
 
+The **synarius-core**, **synarius-apps**, and **synarius-studio** packages declare ``requires-python = ">=3.11,<3.12"`` in each ``pyproject.toml``. Installing with the wrong interpreter (for example Python 3.12) should fail at dependency resolution instead of leaving incompatible wheels.
+
+Use ``python -m pip ...`` with the same interpreter that owns the virtual environment. When you change Python **minor** versions, **recreate the venv** and reinstall; do not copy or reuse ``site-packages`` from another Python.
+
 Repositories and boundaries
 ---------------------------
 
