@@ -12,3 +12,4 @@ This site holds **repo-wide programming and contribution guidelines** for Synari
    :maxdepth: 2
 
    programming_guidelines
+   tips_and_tricks
