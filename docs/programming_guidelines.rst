@@ -114,6 +114,8 @@ Code Coverage
      - 10%
    * - synariustools
      - 15%
+   * - synarius_apps_diagnostics:
+     - 30%
 
 * These percentages will be adopted over time.
 
